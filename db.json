@@ -1,0 +1,20 @@
+{
+  "clientes": [
+    {
+      "nombre": "Cholo",
+      "empresa": "React",
+      "telefono": "",
+      "email": "baruk066@gmail.com",
+      "notas": "",
+      "id": 1
+    },
+    {
+      "nombre": "Alisson",
+      "empresa": "react",
+      "telefono": "4441313937",
+      "email": "alisson@gmail.com",
+      "notas": "macbook pro de apple",
+      "id": 8
+    }
+  ]
+}

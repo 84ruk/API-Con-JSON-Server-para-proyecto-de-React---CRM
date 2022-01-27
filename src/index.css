@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  overflow: hidden;
+  padding: 0 30px;
+}
+
+.outside-square,
+.inside-square {
+  position: absolute;
+  -webkit-animation: sideBouncing 0.3s ease-in-out infinite;
+          animation: sideBouncing 0.3s ease-in-out infinite;
+}
+
+.outside-square {
+  height: 150px;
+  width: 150px;
+  animation-direction: alternate-reverse;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.3);
+}
+
+.inside-square {
+  height: 80px;
+  width: 80px;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes sideBouncing {
+  0% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(5deg);
+  }
+}
+
+@keyframes sideBouncing {
+  0% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(5deg);
+  }
+}
